@@ -1,0 +1,99 @@
+@font-face {
+    font-family: notosans;
+    src: url(/fonts/NotoSans-ExtraLight.ttf);
+}
+@font-face {
+    font-family: gina;
+    src: url(/fonts/Gina-DemiBold.woff2);
+}
+
+
+.banner-coupon-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/banner.png);
+   width: 100%;
+    display: flex;
+ 
+  text-align: center;
+  
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  /* margin-top: 100px; */
+  margin-bottom: 110px;
+  color: white;
+  
+}
+.banner-coupon-code h1{
+    font-family: gina;
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+.banner-coupon-code p{
+   font-family: gina;
+   font-size: 20px;
+   color: rgb(184, 184, 184);
+
+}
+
+
+/* who we are section */
+.wwr-img img{
+width: 700px;
+}
+.wwr-text h1{
+  font-size: 50px;
+  font-family: poppins;
+}
+.wwr-para{
+  
+  font-family: notosans;
+}
+.wwr-text {
+  
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+.whoweare{
+  display: flex;
+  justify-content: center;
+justify-items: center;
+align-items: center;
+  gap: 50px;
+}
+.wwr-underline{
+  font-family: gina;
+  font-size: 20px;
+  padding-top: 30px;
+  text-decoration: underline;
+}
+
+
+/* who we are section ending */
+
+
+
+/* app video section starting */
+
+.app-text h1{
+  font-size: 50px;
+  font-family: poppins;
+}
+.app-video-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.app-video video{
+width: 1200px;
+border-radius:20px;
+margin-top: 30px;
+}

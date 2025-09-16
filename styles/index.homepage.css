@@ -1,0 +1,698 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: roboto;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: gina;
+    src: url(/fonts/Gina-DemiBold.woff2);
+}
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: latothin;
+  src: url(/fonts/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: thicker-black;
+  src: url(/fonts/Thicker-Black-trial.ttf);
+}
+
+
+/* navbar section styling */
+
+
+.list{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #E3E6F3;
+    gap: 800px;
+   
+}
+.nav-list ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.list-item a{
+    text-decoration: none;
+    font-family: gina;
+    color: black;
+    font-size: 20px;
+}
+.list-item a{
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.list-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #398d87;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+.list-item a:hover{
+  color: #398d87;
+  transition: 0.3s;
+}
+.list-item a:hover::after {
+  width: 100%;
+  animation: heartbeat116 1.5s ease-in-out 0.3s infinite;
+}
+
+@keyframes heartbeat116 {
+  0%, 100% {
+    width: 100%;
+  }
+  50% {
+    width: 60%;
+  }
+}
+.cart-icon-navbar img:hover{
+transform: rotate(360deg);
+transition: 0.5s;
+cursor: pointer;
+}
+
+
+/* navbar section styling over */
+
+
+/* main head section styling */
+
+.main-head{
+  background-image: url(/images/hero4.png);
+  width: 100%;
+  height: 100vh;
+  object-position: center;
+  object-fit: cover;
+ 
+  
+}
+.main-head-text{
+  margin-left: 250px;
+  padding-top: 300px;   
+}
+.head-para-1{
+  font-family: gina;
+  font-size: 25px;
+  padding: 10px;
+}
+.head-h1{
+  font-size: 70px;
+  font-family: poppins;
+  line-height: 90px;
+  font-weight: bolder;
+}
+.head-h1 span{
+  color: #398d87;
+}
+.head-para-2{
+  font-family: gina;
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(122, 122, 122);
+}
+.head-button button{
+   margin-left: 250px;
+  background-image: url(/images/button.png);
+  padding: 10px 80px ;
+  object-fit: cover;
+  
+  background-position: center;
+  background-color: #E3E6F3;
+  border: none;
+  
+}
+.head-button button a{
+
+  text-decoration: none;
+  font-family: gina;
+  font-size: 20px;
+  color: #398d87;
+  font-weight: bolder;
+}
+.head-button{
+  margin-top: 20px;
+}
+
+/* main head section styling over */
+
+
+/* feature section styling starting */
+
+
+.feature{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+.feature-card{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgb(214, 214, 214);
+  padding: 20px 13px;
+}
+.feature-card button a{
+ text-decoration: none;
+ font-family: poppins;
+ font-size: 12px;
+ color: #2a7973;
+
+}
+.feature-card button {
+padding: 5px 10px ;
+background-color: #fcccd7;
+border: none;
+border-radius: 5px;
+}
+
+.f-card-2 button{
+  background-color: #d4f1c6;
+}
+.f-card-3 button{
+  background-color: #c5e6f3;
+}
+.f-card-4 button{
+  background-color: #B1B3D3;
+}
+.f-card-6 button{
+  background-color: #f8e5d6;
+}
+
+/* feature section styling over */
+
+
+/* feature products styling starting */
+
+.featured-products{
+  margin-bottom: 100px;
+}
+  .featured-products-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+    
+  }
+  .featured-products-text h1{
+  font-size: 70px;
+  font-family: poppins;
+    
+  }
+  .featured-products-text p{
+  color: rgb(161, 157, 157);
+  font-family: gina;
+    
+  }
+
+  .product-image{
+    height: 250px;
+    border-radius: 10px;
+    
+  }
+  .price-cart-icon{
+    display: flex;
+    gap: 175px;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .cart-icon-div{
+    /* border: 1px solid #C9D1CB; */
+    padding:10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .cart-icon-div:hover{
+    background-color: #e6f1ee;
+    transition: 0.3s;
+  }
+      .cart-icon-div:not(:hover){
+    transition: 0.3s;
+  }
+  .card-para-1{
+    font-family: gina;
+    
+    font-size: 17px;
+    color: rgb(145, 144, 144);
+  }
+  .card-para-2{
+    font-family: poppins;
+  }
+  .product-price{
+    font-family: poppins;
+    color: #257e78;
+  }
+  .card-1{
+    padding: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    
+  }
+  .feature-products-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 200px ;
+  }
+
+  .card-1:hover {
+  box-shadow: 0px 0px 10px rgb(224, 224, 224);
+  cursor: pointer;
+  transition: 0.3s;
+  }
+
+  .card-1:not(:hover){
+      transition: 0.3s;
+      
+  }
+  .card-para-2:hover{
+    color: #257e78;
+    transition: 0.2s;
+  }
+  .card-para-2:not(:hover){
+    transition: 0.2s;
+  }
+
+
+  /* feature products styling over */
+
+
+/* discount banner styling  */
+
+.discount-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(/images/b2.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+  margin-bottom: 110px;
+  color: white;
+  font-family: poppins;
+}
+
+.discount-banner h1{
+  font-size: 50px;
+}
+.discount-banner p{
+  font-size: 20px;
+}
+.discount-banner h1 span{
+  color: red;
+}
+.discount-banner button{
+background-color: white;
+border: none;
+padding: 15px 40px ;
+border-radius: 7px;
+margin-top: 10px;
+}
+.discount-banner button a{
+  text-decoration: none;
+  color: black;
+  font-family: poppins;
+  font-size: 15px;
+}
+.discount-banner button:hover{
+  background-color: #097970 ;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.discount-banner button:hover .discount-banner-button-text{
+  color: white;
+  transition: 0.3s;
+}
+.discount-banner button:not(:hover){
+  transition: 0.3s;
+}
+.discount-banner button:not(:hover) .discount-banner-button-text{
+  transition: 0.3s;
+}
+
+
+/* discount banner styling over  */
+
+
+  /*  multiple banners styling */
+
+
+.multiple-banner-1{
+  background-image: url(/images/b17.jpg);
+display: flex;
+  flex-direction: column;
+  justify-content:center;
+  /* align-items: center; */
+  width: 35%;
+  height: 40vh;
+ background-size: cover;
+ 
+ 
+  color: white;
+  font-family: poppins;
+    cursor: pointer;
+}
+.multiple-banners{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.multiple-banner-1 h2{
+font-family: latothin;
+margin-left: 20px;
+}
+.multiple-banner-1 h1{
+font-family: poppins;
+font-size: 40px;
+margin-left: 20px;
+}
+.multiple-banner-1 p{
+font-family: gina;
+margin-left: 20px;
+font-size: 20px;
+}
+.multiple-banner-1  a{
+text-decoration: none;
+font-family: gina;
+margin-left: 20px;
+font-size: 18px;
+}
+.multiple-banner-1 a {
+padding:  9px 20px;
+margin-top: 10px;
+border: 1px solid white;
+
+width: 85px;
+color: white;
+
+}
+.multiple-banner-2{
+  background-image: url(/images/b10.jpg);
+display: flex;
+  flex-direction: column;
+  justify-content:center;
+  /* align-items: center; */
+  width: 35%;
+  height: 40vh;
+ background-size: cover;
+ 
+margin-bottom: 50px;
+  color: white;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.multiple-banner-2 h2{
+font-family: latothin;
+margin-left: 20px;
+}
+.multiple-banner-2 h1{
+font-family: poppins;
+font-size: 40px;
+margin-left: 20px;
+}
+.multiple-banner-2 p{
+font-family: gina;
+margin-left: 20px;
+font-size: 20px;
+}
+.multiple-banner-2  a{
+text-decoration: none;
+font-family: gina;
+margin-left: 20px;
+font-size: 18px;
+}
+.multiple-banner-2 a {
+padding:  9px 20px;
+margin-top: 10px;
+border: 1px solid white;
+
+width: 80px;
+color: white;
+
+}
+
+.multiple-banner-1:hover .multiple-banner-link{
+  background-color: #097970;
+  transition:0.5s ;
+  border: 1px solid #097970 ;
+  
+}
+
+.multiple-banner-2:hover .multiple-banner-link{
+  background-color: #097970;
+  transition:0.5s ;
+ border: 1px solid #097970 ;
+}
+.banners-3{
+  display: flex;
+  justify-content: center;
+  gap: 43px;
+  margin-bottom: 100px;
+}
+
+.banners-3-1{
+  background-image: url(/images/b7.jpg);
+  width: 21vw;
+  height: 25vh;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   background-size: cover;
+}
+.banners-3-2{
+  background-image: url(/images/b4.jpg);
+  width: 25vw;
+  height: 25vh;
+  object-fit: cover;
+  background-position:top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+}
+.banners-3-1 h1{
+  font-family: thicker-black;
+  color: white;
+  font-size: 35px;
+  margin-left: 30px;
+}
+.banners-3-1 p{
+  font-family: poppins;
+  color: red;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.banners-3-1 h1{
+  font-family: thicker-black;
+  color: white;
+  font-size: 35px;
+  margin-left: 30px;
+}
+.banners-3-1 p{
+  font-family: poppins;
+  color: red;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.banners-3-2 h1{
+  font-family: thicker-black;
+  color: white;
+  font-size: 35px;
+  margin-left: 30px;
+}
+.banners-3-2 p{
+  font-family: poppins;
+  color: red;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.banners-3-3{
+  background-image: url(/images/b18.jpg);
+}
+
+
+
+
+/* newsletter styling starting */
+
+.newsletter{
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ align-items: center;
+ background-image: url("/images/b14.png");
+ background-repeat: no-repeat;
+ background-position: 20% 30%;
+ background-color: #041e42;
+ padding: 50px;
+
+}
+.newsletter h1{
+font-family: poppins;
+font-size: 25px;
+color: white;
+
+}
+.newsletter .newsletter-text p{
+font-family: gina;
+font-size: 20px;
+color: #647183;
+}
+.newsletter p span{
+color: orange;
+}
+.newsletter-input input{
+ width: 330px;
+ padding: 20px;
+ border: none;
+ font-family: poppins;
+ border-bottom-left-radius: 10px;
+ border-TOP-left-radius: 10px;
+}
+.newsletter-input input::placeholder{
+font-family: poppins;
+font-size: 14px;
+  
+}
+.newsletter-input input:focus{
+outline: none;
+  
+}
+.newsletter-input button{
+background-color: #097970;
+ padding: 20px;
+  border: none;
+   border-bottom-right-radius: 10px;
+ border-TOP-right-radius: 10px;
+ cursor: pointer;
+}
+.newsletter-input button a{
+text-decoration: none;
+font-family: gina;
+font-size: 17px;
+
+color: white;
+}
+.newsletter-input{
+  display: flex;
+}
+.input-button{
+  display: flex;
+}
+.news-letter-input-p{
+  color: white;
+  font-family: gina;
+  font-size: 23px;
+}
+
+/* newsletter styling ending */
+
+
+
+/* footer styling section */
+.footer{
+padding: 100px;
+display: flex;
+justify-content: space-around;
+}
+.follow{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.follow p{ 
+ font-family: gina;
+ font-size: 18px;
+}
+.contact p{
+  font-family: gina;
+  font-size: 18px;
+}
+.contact h3 span{
+  font-family: gina;
+  font-size: 18px;
+}
+.contact h3 {
+  font-family: latothin;
+  font-size: 15px;
+  
+}
+.logo-contact-follow-footer{
+display: flex;
+flex-direction: column;
+gap: 20px;
+margin-top: 20px;
+
+
+ 
+ 
+}
+.about-footer p{
+font-family: poppins;
+ font-size: 18px;
+}
+.about-footer a{
+text-decoration: none;
+font-family: gina;
+font-size: 17px;
+margin-top: 5px;
+color: grey;
+}
+.about-footer {
+display: flex;
+flex-direction: column;
+}
+.install-app-img img{
+
+border: 1px solid #097970;
+border-radius: 8px;
+}
+.install-app-img{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.payments{
+  width: 230px;
+  height: 30px;
+  margin-top: 10px;
+}
