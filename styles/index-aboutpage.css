@@ -40,3 +40,48 @@
    color: rgb(184, 184, 184);
 
 }
+.whoweare{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    justify-items: center;
+  padding-left:100px ;
+    align-items: center;
+}
+.whowe-img img{
+    height: 500px;
+    width: 700px;
+ 
+}
+.whowe-text h1{
+ font-family: poppins;
+ font-size: 50px;
+}
+.whowe-text p{
+margin-right: 100px;
+font-family: gina;
+font-size: 18px;
+}
+
+
+
+.videoapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.videoapp h1{
+    font-family: poppins;
+    font-size: 50px;
+}
+.videoapp video{
+  width: 1000px;
+  border-radius: 20px;
+}
+
+
+.feature{
+    margin-bottom: 100px;
+}
